@@ -4,7 +4,48 @@
 /* common style */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
+    margin: 0;
+    
+}
+
+/* nav */
+
+.logo-img{
+   
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-logo{
+    flex:1;
+    font-size: 1rem;
+}
+
+.navbar-toogle{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    
+    align-items: center;
+    background-color: #562EFF;
+    margin-top: 0px;
+    color:white;
+}
+
+
+.navbar li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar-links:hover a{
+    color: red
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
 }
 
 main{
@@ -20,6 +61,10 @@ main{
     padding: 30px;
     margin-top: 21px;
     border-radius: 5px;
+}
+
+.la{
+    margin-bottom: 10px;
 }
 
 hr{
@@ -158,10 +203,28 @@ height: 120px;
        
     }
 
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+
+    .navbar-toogle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
     .players, .blogs{
         display: grid;
         grid-template-columns:repeat(1, 1fr);
        
+    }
+
+    .active{
+        display: block;
     }
 
     .courses{
@@ -200,3 +263,4 @@ height: 120px;
         
  
 }
+
